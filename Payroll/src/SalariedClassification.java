@@ -1,4 +1,4 @@
-
+//按月支付的雇员
 public class SalariedClassification extends PaymentClassfication {
 	private final double salary;
 	

@@ -10,10 +10,12 @@ public class AddHourlyEmplyee extends AddEmployeeTransaction {
 
 	@Override
 	protected PaymentClassfication makeClassfication() {
+		return new HourlyClassifiaction(hourlyRate);
 	}
 
 	@Override
 	protected PaymentSchedule makeSchedule() {
+		return new ScheduleWeekly();
 	}
 
 }
